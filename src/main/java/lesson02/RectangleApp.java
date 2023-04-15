@@ -15,5 +15,8 @@ public class RectangleApp {
         System.out.println(rectangle2.getB());
         rectangle2.setA(5);
         rectangle2.setB(0);
+        System.out.println(rectangle2.getA());
+        System.out.println(rectangle2.getB());
+
     }
 }

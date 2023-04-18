@@ -10,7 +10,8 @@ public class ShapeApp {
         if (circle1 instanceof Square) {
             Square d = (Square) circle1;
             call(circle1);
-        }
+        }String  a="desx";
+        System.out.println(a instanceof Object);
 
         call2(rectangle);
         call2(square);

@@ -1,5 +1,6 @@
 package homework;
 
+import java.time.DayOfWeek;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -8,29 +9,30 @@ public class Human {
     private int year;
     private String name;
     private String surname;
+    private Gender type;
     private Family family;
-    private String[][] schedule;
+    private DayOfWeek[] schedule;
 
-
-    public Human() {
-
+    public Human(String name, String surname, int year, Gender type) {
+        this.name = name;
+        this.surname = surname;
+        this.year = year;
+        this.type=type;
     }
     public Human(String name, String surname, int year) {
         this.name = name;
         this.surname = surname;
         this.year = year;
     }
-    public Human(String name, String surname, int year, Human father, Human mother) {
-        this.name = name;
-        this.surname = surname;
-        this.year = year;
-    }
-    public Human(int iq, int year, String name, String surname, String[][] schedule) {
+    public Human(int iq, int year, String name, String surname, DayOfWeek[] schedule) {
         this.iq = iq;
         this.year = year;
         this.name = name;
         this.surname = surname;
         this.schedule = schedule;
+    }
+    public void greetPet(Pet pet) {
+        System.out.println("Hello, " + pet.getNickname() + "!");
     }
 
     public String getName() {
@@ -57,11 +59,13 @@ public class Human {
         return year;
     }
 
+    public Gender getType() {return type;}
+
     public Family getFamily() {
         return family;
     }
 
-    public String[][] getSchedule() {
+    public DayOfWeek[] getSchedule() {
         return schedule;
     }
 
@@ -82,6 +86,6 @@ public class Human {
 
     @Override
     public String toString() {
-        return String.format("Human{iq=%d, year=%d, name='%s', surname='%s', family=%s, schedule=%s}", iq, year, name, surname, family, Arrays.toString(schedule));
+        return String.format("Human{iq=%d, year=%d, name='%s', surname='%s', family=%s, schedule=%s}", iq, year, name, surname, (family!=null)?family:"", Arrays.toString(schedule));
     }
 }

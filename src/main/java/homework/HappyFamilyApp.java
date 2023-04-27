@@ -1,20 +1,31 @@
 package homework;
 
-import java.util.Arrays;
-
 public class HappyFamilyApp {
     public static void main(String[] args) {
-        Pet pet = new Pet("dog", "rock", 5, 75, new String[]{"eat", "drink", "sleep"});
+        Dog dog = new Dog("Rock",5);
+        DomesticCat cat = new DomesticCat("Oscar",4);
         Human mother = new Human("Jane", "Corleone", 1902);
         Human father = new Human("Vito", "Corleone", 1900);
-        Human child = new Human("Michael","Corleone",1970);
-        String[][] schedule = fillSchedule();
-        Family family = new Family(pet, father,mother,new Human[]{child});
-        System.out.println(Arrays.toString(family.addChild(new Human[]{child})));
-    }
+        Human child = new Human("Jony","Corleone",1970);
+        dog.foul();
+        dog.eat();
+        dog.respond();
+        cat.eat();
+        cat.foul();
+        cat.respond();
 
+
+        String[][] schedule = fillSchedule();
+        Family family = new Family(dog, father,mother);
+        family.addChild(child);
+        System.out.println(family);
+        System.out.println();
+        family.deleteChild(child);
+        System.out.println(family);
+
+    }
     public static String[][] fillSchedule() {
-        String[][] schedule = new String[7][2];
+      String[][] schedule = new String[7][2];
         schedule[0][0] = "Sunday";
         schedule[0][1] = "do home work";
         schedule[1][0] = "Monday";

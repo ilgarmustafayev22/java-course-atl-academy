@@ -1,4 +1,4 @@
-package draft01;
+package draft;
 
 import java.util.Scanner;
 

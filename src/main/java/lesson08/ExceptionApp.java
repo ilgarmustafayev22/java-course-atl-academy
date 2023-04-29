@@ -13,9 +13,10 @@ public class ExceptionApp {
         try {
             number1 = Integer.parseInt(word1);
             number2 = Integer.parseInt(word2);
-        } catch (NumberFormatException numberFormatException) {
-            System.out.println("NumberFormatException");
+            System.out.println(number1 / number2);
+        } catch (NumberFormatException | ArithmeticException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
-        System.out.println(number1 / number2);
     }
 }

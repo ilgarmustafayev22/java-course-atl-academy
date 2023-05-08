@@ -12,6 +12,12 @@ public class PersonApp {
         for (int i = 0; i < count; i++) {
             people[i] = new Person(sc.nextInt(), sc.nextInt(), sc.nextDouble(), sc.next());
         }
+        Arrays.sort(people);
+        System.out.println(Arrays.toString(people));
+
+        Arrays.sort(people, new PersonComparator());
+        System.out.println(Arrays.toString(people));
+
         Arrays.sort(people, new Comparator<Person>() {
             @Override
             public int compare(Person p1, Person p2) {

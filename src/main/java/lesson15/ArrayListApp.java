@@ -14,9 +14,6 @@ public class ArrayListApp {
         }
         System.out.println(nums);
 
-        Arrays.sort(new ArrayList[]{nums});
-        System.out.println(nums);
-
         Collections.sort(nums);
         System.out.println(nums);
 

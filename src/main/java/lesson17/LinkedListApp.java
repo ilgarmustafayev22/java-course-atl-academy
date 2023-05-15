@@ -5,7 +5,6 @@ import java.util.LinkedList;
 public class LinkedListApp {
 
     public static void main(String[] args) {
-
         LinkedList<String> list = new LinkedList<>();
         list.add("12");
         list.add("13");
@@ -23,4 +22,5 @@ public class LinkedListApp {
         String concat = list.element().concat(list.set(2, null));
         System.out.println(concat);
     }
+
 }

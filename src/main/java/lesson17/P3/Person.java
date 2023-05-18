@@ -3,8 +3,8 @@ package lesson17.P3;
 import java.util.Objects;
 
 public class Person {
-    private  int age;
-    private  String name;
+    private int age;
+    private String name;
 
     public Person(int age, String name) {
         this.age = age;

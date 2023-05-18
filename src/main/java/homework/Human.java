@@ -1,30 +1,30 @@
 package homework;
 
-import java.time.DayOfWeek;
+import homework.DayOfWeek;
 import java.util.Arrays;
 import java.util.Objects;
 
 public class Human {
-    private int iq;
-    private int year;
+    private Integer iq;
+    private Integer year;
     private String name;
     private String surname;
     private Gender type;
     private Family family;
     private DayOfWeek[] schedule;
 
-    public Human(String name, String surname, int year, Gender type) {
+    public Human(String name, String surname, Integer year, Gender type) {
         this.name = name;
         this.surname = surname;
         this.year = year;
         this.type=type;
     }
-    public Human(String name, String surname, int year) {
+    public Human(String name, String surname, Integer year) {
         this.name = name;
         this.surname = surname;
         this.year = year;
     }
-    public Human(int iq, int year, String name, String surname, DayOfWeek[] schedule) {
+    public Human(Integer iq, Integer year, String name, String surname, DayOfWeek[] schedule) {
         this.iq = iq;
         this.year = year;
         this.name = name;

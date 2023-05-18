@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public abstract class Pet {
-    private int age;
+    private Integer age;
     private Species type;
     private String nickname;
 
@@ -12,7 +12,7 @@ public abstract class Pet {
         this.type = type;
         this.nickname = nickname;
     }
-    public Pet(Species type, String nickname, int age) {
+    public Pet(Species type, String nickname, Integer age) {
         this.type = type;
         this.nickname = nickname;
         this.age = age;

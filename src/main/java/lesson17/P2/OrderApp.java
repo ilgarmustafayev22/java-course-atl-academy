@@ -1,6 +1,4 @@
-package lesson18;
-
-import java.util.Queue;
+package lesson17.P2;
 
 public class OrderApp {
 

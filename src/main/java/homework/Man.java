@@ -1,7 +1,7 @@
 package homework;
 
 public class Man extends Human implements RepairCar{
-    public Man(String name, String surname, int age) {
+    public Man(String name, String surname, Integer age) {
         super(name, surname, age, Gender.MALE);
     }
     @Override

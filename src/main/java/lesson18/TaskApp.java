@@ -19,7 +19,7 @@ public class TaskApp {
                 max = nums[i];
             }
             sum += nums[i];
-             average = (double) sum / nums.length;
+            average = (double) sum / nums.length;
         }
         System.out.println(max);
         System.out.println(min);

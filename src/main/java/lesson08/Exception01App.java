@@ -16,17 +16,19 @@ public class Exception01App {
 
         int aNum = Integer.parseInt("a123");
         System.out.println(aNum);
+
         try {
-            System.out.println(5/0);
-        }catch (ArithmeticException e){
+            System.out.println(5 / 0);
+        } catch (ArithmeticException e) {
             System.out.println("ArithmeticException");
+
         }
         try {
             String s = "Salam";
             System.out.println(s.length());
             s = null;
             System.out.println(s.length());
-        }catch (NullPointerException e){
+        } catch (NullPointerException e) {
             System.out.println("NullPointerException");
         }
 
@@ -41,6 +43,6 @@ public class Exception01App {
             exception.printStackTrace();
             //System.out.println("alma");
         }
-
     }
 }
+

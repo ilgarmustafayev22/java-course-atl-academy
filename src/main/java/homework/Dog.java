@@ -1,7 +1,7 @@
 package homework;
 
 public class Dog extends Pet implements Foul{
-    public Dog(String nickname, int age) {
+    public Dog(String nickname, Integer age) {
         super(Species.DOG, nickname, age);
     }
     @Override

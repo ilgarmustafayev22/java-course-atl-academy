@@ -1,7 +1,7 @@
 package homework;
 
 public class RobotCat extends Pet implements Foul {
-    public RobotCat(String nickname, int age) {
+    public RobotCat(String nickname, Integer age) {
         super(Species.ROBOTCAT, nickname, age);
     }
     @Override

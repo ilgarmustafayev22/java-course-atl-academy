@@ -26,7 +26,7 @@ public class PersonApp {
         });
         System.out.println(Arrays.toString(people));
 
-        Arrays.sort(people, (p1, p2) -> p1.name.compareTo(p2.name));
+        Arrays.sort(people, Comparator.comparing(p -> p.name));
         System.out.println(Arrays.toString(people));
 
         for (Person person : people) {

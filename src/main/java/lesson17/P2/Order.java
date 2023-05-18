@@ -1,10 +1,10 @@
-package lesson18;
+package lesson17.P2;
 
 public class Order<T> {
     private T id;
 
     public Order(T id) {
-        this.id = new Order<T>(id);
+        this.id = id;
     }
 
     public T getId() {

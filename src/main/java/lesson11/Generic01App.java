@@ -14,14 +14,15 @@ public class Generic01App {
         Response<String, Integer> input = get("null", 20);
         System.out.println(input);
     }
-    public static <T> Result<T> validateAndGet( T t ){
-        if (t==null){
+
+    public static <T> Result<T> validateAndGet(T t) {
+        if (t == null) {
             return new Result<>();
         }
-        return new Result<>(t.getClass().getName(),t);
+        return new Result<>(t.getClass().getName(), t);
     }
 
-    public static <T,U> Response<T,U> get(T t, U u){
+    public static <T, U> Response<T, U> get(T t, U u) {
         return new Response<>(t, u);
     }
 }

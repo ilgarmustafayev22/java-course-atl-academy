@@ -13,6 +13,17 @@ public class LinkedListApp {
         list.add(null);
         System.out.println(list);
 
+        list.push("16");
+
+        String pop = list.pop();
+        System.out.println(pop);
+
+        String peek = list.peek();
+        System.out.println(peek);
+
+        String poll = list.poll();
+        System.out.println(poll);
+
         list.addFirst("Go");
         System.out.println(list);
 
@@ -21,6 +32,8 @@ public class LinkedListApp {
 
         String concat = list.element().concat(list.set(2, null));
         System.out.println(concat);
+
+        System.out.println(list);
     }
 
 }

@@ -1,7 +1,7 @@
 package homework;
 
 public class DomesticCat extends Pet implements Foul{
-    public DomesticCat(String nickname, int age) {
+    public DomesticCat(String nickname, Integer age) {
         super(Species.CAT, nickname, age);
     }
 

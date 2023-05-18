@@ -1,4 +1,4 @@
-package lesson15;
+package lesson16;
 
 import java.util.HashMap;
 
@@ -20,8 +20,9 @@ public class MapApp {
         boolean value = people.containsValue("123");
         System.out.println(value);
 
+        System.out.println(people.get("Samir"));
+
         people.clear();
         System.out.println(people);
-
     }
 }

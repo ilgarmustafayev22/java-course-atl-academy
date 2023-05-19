@@ -10,7 +10,7 @@ public class TaskApp {
 
         for (int i = 0; i < nums.length; i++) nums[i] = (int) (Math.random() * 101);
 
-        int sum = 0;
+        int sum = nums[0];
         int max = nums[0];
         int min = nums[0];
 

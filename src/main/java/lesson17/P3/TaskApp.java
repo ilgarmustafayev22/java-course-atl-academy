@@ -8,7 +8,7 @@ public class TaskApp {
         int size = 20;
         int[] nums = new int[size];
 
-        for (int i = 0; i < nums.length; i++) nums[i] = (int) (Math.random() * 101);
+        for (int i = 1; i < nums.length; i++) nums[i] = (int) (Math.random() * 101);
 
         int sum = nums[0];
         int max = nums[0];

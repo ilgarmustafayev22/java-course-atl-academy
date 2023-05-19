@@ -14,7 +14,6 @@ public class Stream01App {
         list
                 .stream()
                 .forEach(System.out::println);
-
         list
                 .stream()
                 .forEach(s -> System.out.println(s.length()));
@@ -25,12 +24,13 @@ public class Stream01App {
         list
                 .stream()
                 .filter(s -> s.length() >= 3)
-                .forEach(s -> System.out.println());
+                .forEach(s -> System.out.println(s));
         int sum = list
                 .stream()
                 .filter(s -> s.length() >= 3)
                 .mapToInt(s -> s.length())
                 .sum();
+        System.out.println(sum);
     }
 
 }

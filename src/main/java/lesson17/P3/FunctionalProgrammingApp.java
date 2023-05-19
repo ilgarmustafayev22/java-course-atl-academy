@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.*;
 
-public class StreamApp {
+public class FunctionalProgrammingApp {
 
     public static void main(String[] args) {
         IntSummaryStatistics statistics = new Random()

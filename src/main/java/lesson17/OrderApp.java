@@ -1,4 +1,4 @@
-package lesson17.P2;
+package lesson17;
 
 public class OrderApp {
 

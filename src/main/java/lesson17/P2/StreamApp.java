@@ -1,4 +1,4 @@
-package lesson17.P4;
+package lesson17.P2;
 
 import java.util.ArrayList;
 import java.util.IntSummaryStatistics;

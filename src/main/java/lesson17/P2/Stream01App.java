@@ -1,6 +1,7 @@
-package lesson17.P4;
+package lesson17.P2;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Stream01App {

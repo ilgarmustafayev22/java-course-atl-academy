@@ -1,4 +1,4 @@
-package lesson17;
+package lesson16.P2;
 
 import java.util.HashMap;
 import java.util.LinkedList;

@@ -1,5 +1,7 @@
 package datastructor;
 
+import java.util.PriorityQueue;
+
 public class QueueApp {
 
     public static void main(String[] args) {

@@ -14,15 +14,21 @@ public class LinkedListApp {
         System.out.println(list);
 
         list.push("16");
+        System.out.println(list);
 
         String pop = list.pop();
         System.out.println(pop);
+        System.out.println(list);
 
         String peek = list.peek();
         System.out.println(peek);
+        System.out.println(list);
+
+        System.out.println("=========");
 
         String poll = list.poll();
         System.out.println(poll);
+        System.out.println(list);
 
         list.addFirst("Go");
         System.out.println(list);

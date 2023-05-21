@@ -14,6 +14,18 @@ public class DequeApp {
         list.add("14");
         System.out.println(list);
 
+        list.poll();
+        System.out.println(list);
+
+        list.pop();
+        System.out.println(list);
+
+        list.push("32");
+        System.out.println(list);
+
+        String peek = list.peek();
+        System.out.println(peek);
+
         list.addFirst("9");
         System.out.println(list);
 

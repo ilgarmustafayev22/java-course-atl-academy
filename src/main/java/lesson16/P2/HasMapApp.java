@@ -14,8 +14,10 @@ public class HasMapApp {
         map.put("Shaurma",wolt);
         System.out.println(map);
 
-        wolt.add(5);
-        map.put("Doner",wolt);
+        Queue<Integer> boltFood = new LinkedList<>();
+        boltFood.add(5);
+        map.put("Doner",boltFood);
         System.out.println(map);
     }
+
 }

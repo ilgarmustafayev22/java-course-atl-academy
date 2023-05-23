@@ -1,4 +1,4 @@
-package lesson17;
+package lesson16.P3;
 
 import java.util.LinkedList;
 import java.util.Queue;

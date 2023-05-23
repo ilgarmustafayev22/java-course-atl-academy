@@ -1,4 +1,4 @@
-package lesson17;
+package lesson16.P3;
 
 public class Order<T> {
     private T id;

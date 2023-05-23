@@ -1,4 +1,6 @@
-package lesson17;
+package lesson16.P3;
+
+import lesson16.P3.Order;
 
 public class OrderApp {
 

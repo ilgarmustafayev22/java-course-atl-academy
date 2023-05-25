@@ -10,13 +10,6 @@ public class Order<T> {
     public T getId() {
         return id;
     }
-    public Order<T> makeOrder(T id){
-        Order<T> temp =new Order<>(id);
-        return temp ;
-    }
-    public T processOrder(){
-        return id;
-    }
 
     @Override
     public String toString() {

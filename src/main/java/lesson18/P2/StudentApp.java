@@ -1,9 +1,6 @@
 package lesson18.P2;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class StudentApp {
     public static final String RESOURCE = "src/main/java/resource/";
@@ -18,6 +15,21 @@ public class StudentApp {
             bw.close();
             fw.close();
         }catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
+
+        try {
+            File bTxt = new File(RESOURCE + "d.txt");
+            FileReader fr = new FileReader(bTxt);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+            System.out.println(line);
+            br.close();
+            fr.close();
+        } catch (IOException ioException) {
             ioException.printStackTrace();
         }
 

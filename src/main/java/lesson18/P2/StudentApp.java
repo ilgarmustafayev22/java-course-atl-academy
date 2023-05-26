@@ -1,9 +1,11 @@
 package lesson18.P2;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class StudentApp {
     public static final String RESOURCE = "src/main/java/resource/";
+
     public static void main(String[] args) {
         Student student = new Student(20, 99, "Bob");
 
@@ -14,23 +16,18 @@ public class StudentApp {
             bw.write(student.toString());
             bw.close();
             fw.close();
-        }catch (IOException ioException) {
+        } catch (IOException ioException) {
             ioException.printStackTrace();
         }
 
         try {
-            File bTxt = new File(RESOURCE + "d.txt");
-            FileReader fr = new FileReader(bTxt);
-            BufferedReader br = new BufferedReader(fr);
-            String line;
-            while ((line = br.readLine()) != null) {
-                System.out.println(line);
-            }
-            System.out.println(line);
-            br.close();
-            fr.close();
-        } catch (IOException ioException) {
-            ioException.printStackTrace();
+            BufferedInputStream bis =
+                    new BufferedInputStream(new FileInputStream(ArrayApp.RESOURCE + "d.txt"));
+            byte[] bytes = bis.readAllBytes();
+            System.out.println(Arrays.toString(bytes));
+            bis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
     }

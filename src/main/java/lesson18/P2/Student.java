@@ -1,8 +1,9 @@
 package lesson18.P2;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Student {
+public class Student implements Serializable {
     private int age;
     private double grade;
     private String name;
@@ -40,6 +41,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return String.format("Student{age=%d, grade=%s, name='%s'}", age, grade, name);
+        return String.format("{%d, %s,'%s'}", age, grade, name);
     }
 }

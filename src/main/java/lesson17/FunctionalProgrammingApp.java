@@ -46,7 +46,6 @@ public class FunctionalProgrammingApp {
         System.out.println(generateRandom.get());
 
         Predicate<Integer> isEven = num -> num % 2 == 0;
-
     }
 
 }

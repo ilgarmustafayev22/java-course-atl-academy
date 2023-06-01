@@ -13,7 +13,7 @@ public class MultiThreadingApp {
             }
         }).start();
 
-         new Thread(() -> System.out.println(Thread.MAX_PRIORITY)).start();
+         new Thread(() -> System.out.println(Thread.getAllStackTraces())).start();
     }
 
 }

@@ -4,7 +4,7 @@ public class MultiThreadingApp {
 
     public static void main(String[] args) {
         Thread01 thread01 = new Thread01();
-        thread01.run();
+        new Thread(thread01).start();
 
         new Thread(new Runnable() {
             @Override

@@ -1,17 +1,18 @@
 package lesson19;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lesson18.P2.Student;
 
-import java.io.*;
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-
-import static lesson19.FileApp.RESOURCE;
 
 
 public class FileApp {
     public static final String RESOURCE = "src/main/java/resource/";
+
     public static void main(String[] args) {
         String studentsFile = RESOURCE + "people.ser";
 

@@ -1,6 +1,6 @@
 package lesson19.P2;
 
-public class MultiThreading extends Thread{
+public class Thread01 implements  Runnable{
     @Override
     public void run() {
         for (int i = 0; i < 10; i++) {

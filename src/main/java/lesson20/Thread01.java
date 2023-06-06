@@ -1,4 +1,4 @@
-package lesson19.P2;
+package lesson20;
 
 public class Thread01 implements  Runnable{
     @Override

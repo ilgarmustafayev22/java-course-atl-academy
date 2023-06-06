@@ -1,17 +1,12 @@
-package lesson19;
+package file;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 public class Person implements Serializable {
     public static final long serialVersionUID = 49;
-    public  long id;
-    public  String name;
-    public  String surname;
-
-    public Person() {
-
-    }
+    public final long id;
+    public final String name;
+    public final String surname;
 
     public Person(int id, String name, String surname) {
         this.id = id;
@@ -25,4 +20,3 @@ public class Person implements Serializable {
     }
 
 }
-

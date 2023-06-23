@@ -1,5 +1,5 @@
 package draft01;
 
 public class Config {
-    public static Student[] students=null;
+    public static Student[] students = null;
 }

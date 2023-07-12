@@ -69,6 +69,34 @@ select p.name, max(price) as MaxPrice, min(price) MinPrice
 from Products p
 group by p.name;
 
+create table Students
+(
+    id serial primary key ,
+    name varchar(20),
+    AvgGrade decimal(6,3)
+);
+
+create table Grade
+(
+    StudentID serial primary key ,
+    grade decimal(6,3)
+);
+
+insert into Students (name, AvgGrade)
+values ('Ilgar', 99.9),
+       ('Samir', 51.2),
+       ('Rasim', 75.6),
+       ('Elqasim', 94.5);
+
+insert into Grade (grade)
+values (60.5),
+       (78.6),
+       (58),
+       (90.2);
+
+select *
+from students where AvgGrade > (select avg(grade) from grade);
+
 create table MaleStudents
 (
     id serial primary key ,
